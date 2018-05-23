@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Siema can mount 1`] = `
+"
+            <div id=\\"app\\"><div class=\\"siema\\" style=\\"overflow: hidden; direction: ltr; cursor: -webkit-grab;\\"><div style=\\"width: 0px; -webkit-transition: all 500ms ease;\\"><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 5</div></div><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 1</div></div><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 2</div></div><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 3</div></div><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 4</div></div><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 5</div></div><div style=\\"float: left; width: 14.285714285714286%;\\"><div>Slide 1</div></div></div></div></div>
+        "
+`;

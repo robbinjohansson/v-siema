@@ -1,0 +1,28 @@
+<html lang="en" class="bg-white antialiased">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>V-Siema</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="font-sans font-normal text-black leading-normal">
+<div id="app" class="mx-auto mt-8 px-4" style="width: 1200px; max-width: 90%;">
+    <siema
+        ref="siema"
+        @init="init"
+        @change="change"
+        :loop="true"
+    >
+        <div v-for="n in 5">
+            <img src="http://via.placeholder.com/1920x1080" :alt="'Slide ' + n">
+        </div>
+    </siema>
+    <div>
+        <a href="#" @click.prevent="prev">Prev</a>
+        <a href="#" @click.prevent="next">Next</a>
+    </div>
+</div>
+<script src="/build/app.js"></script>
+</body>
+</html>
