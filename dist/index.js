@@ -259,7 +259,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 this.Siema.remove(index, callback);
             },
             insert: function insert(item, index, callback) {
-                this.Siema.remove(item, index, callback);
+                this.Siema.insert(item, index, callback);
             },
             prepend: function prepend(item, callback) {
                 this.Siema.prepend(item, callback);

@@ -124,7 +124,7 @@ export default {
             this.Siema.remove(index, callback);
         },
         insert(item, index, callback) {
-            this.Siema.remove(item, index, callback);
+            this.Siema.insert(item, index, callback);
         },
         prepend(item, callback) {
             this.Siema.prepend(item, callback);
