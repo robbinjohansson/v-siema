@@ -10,13 +10,15 @@ new Vue({
         init() {
             console.log('Init!');
         },
+
         change() {
             console.log(this.$refs.siema.currentSlide);
         },
+
         prev() {
             this.$refs.siema.prev();
-            // this.$refs.siema.destroy(true);
         },
+
         next() {
             this.$refs.siema.next();
         },

@@ -131,29 +131,6 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
     }
 
     exports.default = {
-        mounted: function mounted() {
-            var _this = this;
-
-            this.init();
-            if (this.autoplay) {
-                setInterval(function () {
-                    return _this.Siema.next();
-                }, this.autoplayDuration);
-            }
-        },
-        data: function data() {
-            return {
-                Siema: ''
-            };
-        },
-
-
-        computed: {
-            currentSlide: function currentSlide() {
-                return this.Siema.currentSlide;
-            }
-        },
-
         props: {
             autoplay: {
                 type: Boolean,
@@ -216,6 +193,31 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 required: false
             }
         },
+
+        data: function data() {
+            return {
+                Siema: ''
+            };
+        },
+
+
+        computed: {
+            currentSlide: function currentSlide() {
+                return this.Siema.currentSlide;
+            }
+        },
+
+        mounted: function mounted() {
+            var _this = this;
+
+            this.init();
+            if (this.autoplay) {
+                setInterval(function () {
+                    return _this.Siema.next();
+                }, this.autoplayDuration);
+            }
+        },
+
 
         methods: {
             init: function init() {

@@ -8,25 +8,6 @@
 import Siema from 'siema';
 
 export default {
-    mounted() {
-        this.init();
-        if (this.autoplay) {
-            setInterval(() => this.Siema.next(), this.autoplayDuration);
-        }
-    },
-
-    data() {
-        return {
-            Siema: '',
-        };
-    },
-
-    computed: {
-        currentSlide() {
-            return this.Siema.currentSlide;
-        },
-    },
-
     props: {
         autoplay: {
             type: Boolean,
@@ -90,6 +71,25 @@ export default {
         },
     },
 
+    data() {
+        return {
+            Siema: '',
+        };
+    },
+
+    computed: {
+        currentSlide() {
+            return this.Siema.currentSlide;
+        },
+    },
+
+    mounted() {
+        this.init();
+        if (this.autoplay) {
+            setInterval(() => this.Siema.next(), this.autoplayDuration);
+        }
+    },
+
     methods: {
         init() {
             this.Siema = new Siema({
@@ -111,27 +111,35 @@ export default {
                 },
             });
         },
+
         goTo(index, callback) {
             this.Siema.goTo(index, callback);
         },
+
         prev(howManySlides = 1, callback) {
             this.Siema.prev(howManySlides, callback);
         },
+
         next(howManySlides = 1, callback) {
             this.Siema.next(howManySlides, callback);
         },
+
         remove(index, callback) {
             this.Siema.remove(index, callback);
         },
+
         insert(item, index, callback) {
             this.Siema.insert(item, index, callback);
         },
+
         prepend(item, callback) {
             this.Siema.prepend(item, callback);
         },
+
         append(item, callback) {
             this.Siema.append(item, callback);
         },
+
         destroy(restoreMarkup = false, callback) {
             this.Siema.destroy(restoreMarkup, callback);
         },

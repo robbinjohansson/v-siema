@@ -75,12 +75,15 @@ export default {
         init() {
             console.log('Initialized!');
         },
+
         change() {
             console.log('Changed!');
         },
+
         prev() {
             this.$refs.siema.prev();
         },
+        
         next() {
             this.$refs.siema.next();
         },
