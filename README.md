@@ -145,7 +145,7 @@ Prints current slide index.
 ### Extras
 
 **`this.$refs.siema.init();`**  
-Initiate the slider instance. This is normally not needed for a simple setup as the component will call the `init()` method when mounted, however it is useful if for example the `detroy()` method is being used and you'd want to re-init the slider manually.
+Initiate the slider instance. Useful for when example the `destroy()` method is being used and you'd want a way to re-init the slider manually. Please not that the slider component is automatically initiated when mounted. This helper is just a way for you to re-initiate the slider instance if/when needed.
 
 ## Changelog
 
