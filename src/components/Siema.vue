@@ -73,26 +73,26 @@ export default {
 
     data() {
         return {
-            Siema: '',
+            siema: '',
         };
     },
 
     computed: {
         currentSlide() {
-            return this.Siema.currentSlide;
+            return this.siema.currentSlide;
         },
     },
 
     mounted() {
         this.init();
         if (this.autoplay) {
-            setInterval(() => this.Siema.next(), this.autoplayDuration);
+            setInterval(() => this.siema.next(), this.autoplayDuration);
         }
     },
 
     methods: {
         init() {
-            this.Siema = new Siema({
+            this.siema = new Siema({
                 selector: '.' + this.selector,
                 duration: this.duration,
                 easing: this.easing,
@@ -113,35 +113,35 @@ export default {
         },
 
         goTo(index, callback) {
-            this.Siema.goTo(index, callback);
+            this.siema.goTo(index, callback);
         },
 
         prev(howManySlides = 1, callback) {
-            this.Siema.prev(howManySlides, callback);
+            this.siema.prev(howManySlides, callback);
         },
 
         next(howManySlides = 1, callback) {
-            this.Siema.next(howManySlides, callback);
+            this.siema.next(howManySlides, callback);
         },
 
         remove(index, callback) {
-            this.Siema.remove(index, callback);
+            this.siema.remove(index, callback);
         },
 
         insert(item, index, callback) {
-            this.Siema.insert(item, index, callback);
+            this.siema.insert(item, index, callback);
         },
 
         prepend(item, callback) {
-            this.Siema.prepend(item, callback);
+            this.siema.prepend(item, callback);
         },
 
         append(item, callback) {
-            this.Siema.append(item, callback);
+            this.siema.append(item, callback);
         },
 
         destroy(restoreMarkup = false, callback) {
-            this.Siema.destroy(restoreMarkup, callback);
+            this.siema.destroy(restoreMarkup, callback);
         },
     },
 };

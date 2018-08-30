@@ -11242,14 +11242,14 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
 
         data: function data() {
             return {
-                Siema: ''
+                siema: ''
             };
         },
 
 
         computed: {
             currentSlide: function currentSlide() {
-                return this.Siema.currentSlide;
+                return this.siema.currentSlide;
             }
         },
 
@@ -11259,7 +11259,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             this.init();
             if (this.autoplay) {
                 setInterval(function () {
-                    return _this.Siema.next();
+                    return _this.siema.next();
                 }, this.autoplayDuration);
             }
         },
@@ -11269,7 +11269,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
             init: function init() {
                 var _this2 = this;
 
-                this.Siema = new _siema2.default({
+                this.siema = new _siema2.default({
                     selector: '.' + this.selector,
                     duration: this.duration,
                     easing: this.easing,
@@ -11289,37 +11289,37 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 });
             },
             goTo: function goTo(index, callback) {
-                this.Siema.goTo(index, callback);
+                this.siema.goTo(index, callback);
             },
             prev: function prev() {
                 var howManySlides = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
                 var callback = arguments[1];
 
-                this.Siema.prev(howManySlides, callback);
+                this.siema.prev(howManySlides, callback);
             },
             next: function next() {
                 var howManySlides = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
                 var callback = arguments[1];
 
-                this.Siema.next(howManySlides, callback);
+                this.siema.next(howManySlides, callback);
             },
             remove: function remove(index, callback) {
-                this.Siema.remove(index, callback);
+                this.siema.remove(index, callback);
             },
             insert: function insert(item, index, callback) {
-                this.Siema.insert(item, index, callback);
+                this.siema.insert(item, index, callback);
             },
             prepend: function prepend(item, callback) {
-                this.Siema.prepend(item, callback);
+                this.siema.prepend(item, callback);
             },
             append: function append(item, callback) {
-                this.Siema.append(item, callback);
+                this.siema.append(item, callback);
             },
             destroy: function destroy() {
                 var restoreMarkup = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
                 var callback = arguments[1];
 
-                this.Siema.destroy(restoreMarkup, callback);
+                this.siema.destroy(restoreMarkup, callback);
             }
         }
     };
