@@ -1,6 +1,6 @@
 {
   "name": "v-siema",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Vue wrapper for Siema carousel",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",

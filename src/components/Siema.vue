@@ -35,7 +35,7 @@ export default {
             required: false,
         },
         perPage: {
-            type: Number,
+            type: [Number, Object],
             default: 1,
             required: false,
         },

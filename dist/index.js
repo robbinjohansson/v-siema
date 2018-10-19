@@ -158,7 +158,7 @@ var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_
                 required: false
             },
             perPage: {
-                type: Number,
+                type: [Number, Object],
                 default: 1,
                 required: false
             },

@@ -7,7 +7,7 @@
 
 Vue wrapper for Siema carousel.
 
-> Siema is a lightweight (only 3kb gzipped) carousel plugin with no dependencies and no styling. As Brad Frost once said "do that shit yourself". It is 100% open source and [available on Github.](https://github.com/pawelgrzybek/siema)
+> Siema is a lightweight (only 3kb gzipped) carousel plugin with no dependencies and no styling. It is 100% open source and [available on Github.](https://github.com/pawelgrzybek/siema)
 
 Full docs with examples: [https://pawelgrzybek.com/siema/](https://pawelgrzybek.com/siema/).
 
@@ -60,8 +60,8 @@ Display the component using any custom markup that fits your use case:
 
         <!-- Example using prev/next buttons -->
         <div>
-            <a href="#" @click.prevent="prev">Prev</a>
-            <a href="#" @click.prevent="next">Next</a>
+            <a @click="prev">Prev</a>
+            <a @click="next">Next</a>
         </div>
     </div>
 </template>
@@ -96,20 +96,20 @@ export default {
 
 Prop                | Data Type  | Default  | Required   | Description
 ------------------- | ---------- | --------- | -------   | -----------
-`autoplay`          | Boolean    | `false`   | `false`   | Enable autoplay
-`autoplay-duration` | Number     | `3000`    | `false`   | Autoplay duration between slide change
-`selector`          | String     | `siema`   | `false`   | The selector to use as a carousel
-`duration`          | Number     | `500`     | `false`   | Slide transition duration in milliseconds
-`easing`            | String     | `ease`    | `false`   | CSS transition-timing-function — describes acceleration curve
-`per-page`          | Number     | `1`       | `false`   | The number of slides to be shown per page
-`start-index`       | Number     | `0`       | `false`   | Index (zero-based) of the starting slide
-`draggable`         | Boolean    | `true`    | `false`   | Use dragging and touch swiping
-`multiple-drag`     | Boolean    | `true`    | `false`   | Allow dragging to move multiple slides
-`threshold`         | Number     | `20`      | `false`   | Touch and mouse dragging threshold (in px)
-`loop`              | Boolean    | `false`   | `false`   | Enable loop
-`rtl`               | Boolean    | `false`   | `false`   | Enables layout for languages written from right to left
-`@init`             | Function   |           | `false`   | Runs immediately after initialization
-`@change`           | Function   |           | `false`   | Runs after slide change
+`autoplay`          | Boolean        | `false`   | `false`   | Enable autoplay
+`autoplay-duration` | Number         | `3000`    | `false`   | Autoplay duration between slide change
+`selector`          | String         | `siema`   | `false`   | The selector to use as a carousel
+`duration`          | Number         | `500`     | `false`   | Slide transition duration in milliseconds
+`easing`            | String         | `ease`    | `false`   | CSS transition-timing-function — describes acceleration curve
+`per-page`          | Number, Object | `1`       | `false`   | The number of slides to be shown per page
+`start-index`       | Number         | `0`       | `false`   | Index (zero-based) of the starting slide
+`draggable`         | Boolean        | `true`    | `false`   | Use dragging and touch swiping
+`multiple-drag`     | Boolean        | `true`    | `false`   | Allow dragging to move multiple slides
+`threshold`         | Number         | `20`      | `false`   | Touch and mouse dragging threshold (in px)
+`loop`              | Boolean        | `false`   | `false`   | Enable loop
+`rtl`               | Boolean        | `false`   | `false`   | Enables layout for languages written from right to left
+`@init`             | Function       |           | `false`   | Runs immediately after initialization
+`@change`           | Function       |           | `false`   | Runs after slide change
 
 ## API
 
@@ -145,7 +145,7 @@ Prints current slide index.
 ### Extras
 
 **`this.$refs.siema.init();`**  
-Initiate the slider instance. Useful for when example the `destroy()` method is being used and you'd want a way to re-init the slider manually. Please note that the slider component is automatically initiated when mounted.
+Initiate the slider instance. Useful when you'd want to initiate the slider manually. Please note that the slider component is automatically initiated when mounted.
 
 ## Changelog
 
