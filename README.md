@@ -1,7 +1,7 @@
 [![Latest Version on NPM](https://img.shields.io/npm/v/v-siema.svg?style=flat-square)](https://npmjs.com/package/v-siema)
 [![Total Downloads on NPM](https://img.shields.io/npm/dt/v-siema.svg)](https://www.npmjs.com/package/v-siema)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/robbinfellow/v-siema/master.svg?style=flat-square)](https://travis-ci.org/robbinfellow/v-siema)
+[![Build Status](https://img.shields.io/travis/robbinworks/v-siema/master.svg?style=flat-square)](https://travis-ci.org/robbinworks/v-siema)
 
 # V-Siema
 
@@ -157,7 +157,7 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Credits
 
-* [Robbin Johansson](https://github.com/robbinfellow)
+* [Robbin Johansson](https://github.com/robbinworks)
 * [pawelgrzybek/siema](https://github.com/pawelgrzybek/siema)
 * [spatie/skeleton-vue](https://github.com/spatie/skeleton-vue)
 

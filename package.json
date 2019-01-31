@@ -1,6 +1,6 @@
 {
   "name": "v-siema",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Vue wrapper for Siema carousel",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/robbinfellow/v-siema.git"
+    "url": "git+https://github.com/robbinworks/v-siema.git"
   },
   "keywords": [
     "vue",
@@ -25,9 +25,9 @@
   "author": "Robbin Johansson",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/robbinfellow/v-siema/issues"
+    "url": "https://github.com/robbinworks/v-siema/issues"
   },
-  "homepage": "https://github.com/robbinfellow/v-siema/",
+  "homepage": "https://github.com/robbinworks/v-siema/",
   "peerDependencies": {
     "vue": "^2.3.0"
   },

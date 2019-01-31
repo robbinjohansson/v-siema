@@ -2,7 +2,7 @@
 
 Contributions are **welcome** and will be fully **credited**.
 
-We accept contributions via Pull Requests on [Github](https://github.com/robbinfellow/v-siema).
+We accept contributions via Pull Requests on [Github](https://github.com/robbinworks/v-siema).
 
 ## Pull Requests
 
