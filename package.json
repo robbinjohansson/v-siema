@@ -1,13 +1,13 @@
 {
   "name": "v-siema",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Vue wrapper for Siema carousel",
   "main": "dist/index.js",
   "jsnext:main": "src/index.js",
   "scripts": {
-    "start": "webpack-dev-server --config docs/webpack.config.js",
-    "demo": "NODE_ENV=production webpack --config docs/webpack.config.js",
-    "build": "rm -rf dist && NODE_ENV=production webpack",
+    "start": "webpack-dev-server --mode development --config docs/webpack.config.js",
+    "demo": "webpack --mode production --config docs/webpack.config.js",
+    "build": "rm -rf dist && webpack --mode production",
     "lint": "eslint --ext .js,.vue --fix src __tests__; exit 0",
     "prepublish": "yarn test; yarn build",
     "test": "jest"
@@ -44,10 +44,11 @@
     "jest-vue-preprocessor": "^0.2.0",
     "siema": "^1.5.1",
     "vue": "^2.3.0",
-    "vue-loader": "^12.0.3",
+    "vue-loader": "^14.2.2",
     "vue-template-compiler": "^2.3.0",
-    "webpack": "^2.3.3",
-    "webpack-dev-server": "^2.4.2",
+    "webpack": "^4.29.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.14",
     "webpack-merge": "^4.1.0"
   },
   "jest": {
